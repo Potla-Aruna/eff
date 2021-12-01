@@ -1,0 +1,137 @@
+{
+	"data": [
+		{
+            "id" : 5122,
+			"driver_name": "John Mark",
+			"vehicle_no": "ACX 7518",
+			"pickup_location": "Las Vegas",
+			"pickup_date": "12/10/2021",
+			"drop_location": "Denver",
+			"drop_date": "12/10/2021",
+			"pickup_load": "check",
+			"drop_completed_icon": "check",
+            "drop_completed_text" : "Done",
+            "documents_title": "View",
+            "eff_status":"Verified"
+		},
+        {
+            "id" :1252,
+			"driver_name": "Daniel Mckee",
+			"vehicle_no": "HAQ A418",
+			"pickup_location": "Las Vegas",
+			"pickup_date": "12/10/2021",
+			"drop_location": "Denver",
+			"drop_date": "12/10/2021",
+			"pickup_load": "check",
+			"drop_completed_icon": "ellipsis-h",
+            "drop_completed_text" : "In Progess",
+            "documents_title": "View",
+            "eff_status":"Pending"
+		},
+        {
+            "id" : 3012,
+			"driver_name": "Robert",
+			"vehicle_no": "MN 895A",
+			"pickup_location": "Las Vegas",
+			"pickup_date": "12/10/2021",
+			"drop_location": "Denver",
+			"drop_date": "12/10/2021",
+			"pickup_load": "check",
+			"drop_completed_icon": "check",
+            "drop_completed_text" : "Done",
+            "documents_title": "View",
+            "eff_status":"Cancelled"
+		},
+        {
+            "id" : 7821,
+			"driver_name": "William",
+			"vehicle_no": "TX B11",
+			"pickup_location": "Las Vegas",
+			"pickup_date": "12/10/2021",
+			"drop_location": "Denver",
+			"drop_date": "12/10/2021",
+			"pickup_load": "check",
+			"drop_completed_icon": "check",
+            "drop_completed_text" : "Done",
+            "documents_title": "View",
+            "eff_status":"Verified"
+		},
+        {
+            "id" : 8811,
+			"driver_name": "Kiran",
+			"vehicle_no": "NY 158Q",
+			"pickup_location": "Las Vegas",
+			"pickup_date": "12/10/2021",
+			"drop_location": "Denver",
+			"drop_date": "12/10/2021",
+			"pickup_load": "check",
+			"drop_completed_icon": "check",
+            "drop_completed_text" : "Done",
+            "documents_title": "View",
+            "eff_status":"Verified"
+		},
+        {
+            "id" : 9744,
+			"driver_name": "Jack",
+			"vehicle_no": "WD 712A",
+			"pickup_location": "Las Vegas",
+			"pickup_date": "12/10/2021",
+			"drop_location": "Denver",
+			"drop_date": "12/10/2021",
+			"pickup_load": "check",
+			"drop_completed_icon": "check",
+            "drop_completed_text" : "Done",
+            "documents_title": "View",
+            "eff_status":"Verified"
+		}
+
+	],
+    "headers" : ["Load ID","Driver Name","Vehicle No","Pickup","Pickup Date","Deliver","Deliver Date","Pickup Load","Drop Completed","Documents","EFF Status"],
+
+    "searchPlaceholders" :[
+        {
+            "placeholder" :"Search",
+            "width" : 80
+        },
+        {
+            "placeholder" :"Search by Name",
+            "width" : 176
+        },
+        {
+            "placeholder" :"Search Vehicle",
+            "width" : 100
+        },
+        {
+            "placeholder" :"Search Pickup",
+            "width" : 130
+        },
+        {
+            "placeholder" :"Search",
+            "width" : 110
+        },
+        {
+            "placeholder" :"Search",
+            "width" : 130
+        },
+        {
+            "placeholder" :"Search by Name",
+            "width" : 112
+        },
+        {
+            "placeholder" :"",
+            "width" : 110
+        },
+        {
+            "placeholder" :"Search",
+            "width" : 136
+        },
+        {
+            "placeholder" :"",
+            "width" : 104
+        },
+        {
+            "placeholder" :"Search by Name",
+            "width" : 100
+        }
+    ]
+}

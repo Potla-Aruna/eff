@@ -1,0 +1,239 @@
+<div class="create-load">
+    <div class="create-load-title-container">
+        <i class="pi pi-arrow-left"  style="cursor: pointer;" routerLink="/dashboard"></i>
+        <h2 [ngStyle]="{
+            color: app.colorScheme === 'light' ? '#000' : '#fff'
+        }" class="create-load-title">Create Load</h2>
+    </div>
+
+    <div class="create-load-card">
+        <form class="create-load-form" action="" [formGroup]="createLoad_Form" (ngSubmit)="onSubmit_CreateForm(createLoad_Form.value)">
+            <div class="create-load-form-section">
+                <div class="form-input-group">
+                    <label class="form-label" for="pickup-location"
+                        >Pickup Location <span class="mandatory error">*</span></label
+                    >
+                    <span class="p-input-icon-right create-load-input-icon">
+                        <i class="pi pi-map-marker"></i>
+                        <input
+                            placeholder="Pickup Location"
+                            class="form-input"
+                            type="text"
+                            pInputText
+                            formControlName="load_pickup_loc"
+                            id="myInput"
+                            (keyup)="onPickUpLocSearch($event)"
+                        />
+                        <span *ngIf="createLoad_Form.get('load_pickup_loc').errors">
+                            <span class="error" *ngIf="createLoad_Form.get('load_pickup_loc').touched && createLoad_Form.get('load_pickup_loc').errors.required">
+                                Pickup Location is required
+                            </span>
+                        </span>
+                    </span>
+                </div>
+                <div class="autocomplete card" style="padding: 0px 0px 0px 0px;;overflow: auto;" *ngIf="showPickupLoc">
+                      <li  class="autocomplete-items"  *ngFor="let each of mappedData" (click)="onSelectPickUpLoc(each.raw)"> {{each.raw.display_name}} <i class="pi pi-map-marker"></i></li>
+                </div>
+                <div class="form-input-group">
+                    <label class="form-label" for="driver">Driver</label>
+                    <p-dropdown
+                        [options]="drivers"
+                        optionLabel="name"
+                        placeholder="Select Driver"
+                        formControlName="driverName"
+                    ></p-dropdown>
+                </div>
+                <div class="form-input-group" style="margin-top: 18px;">
+                    <label class="form-label" for="pickup-date"
+                        >Pickup Date  <span class="mandatory error">*</span></label
+                    >
+                    <p-calendar
+                        icon="pi pi-angle-down"
+                        [showIcon]="true"
+                        placeholder="Pickup Date"
+                        formControlName="load_pickup_date"
+                    ></p-calendar>
+                    <span *ngIf="createLoad_Form.get('load_pickup_date').errors">
+                        <span class="error" *ngIf="createLoad_Form.get('load_pickup_date').touched && createLoad_Form.get('load_pickup_date').errors.required">
+                            Pickup Date is required
+                        </span>
+                    </span>
+                </div>
+
+                <div class="form-input-group" style="margin-top: 18px;">
+                    <label class="form-label" for="loadSize">Load Size</label>
+                    <p-dropdown
+                        [options]="loadSize"
+                        placeholder="Load Size"
+                        optionLabel="name"
+
+                        formControlName="load_size"
+                    ></p-dropdown>
+                </div>
+
+                <div class="form-input-group" style="margin-top: 18px;">
+                    <label class="form-label" for="equipmentType"
+                        >Equipment Type</label
+                    >
+                    <p-dropdown
+                        [options]="equipmentType"
+                        optionLabel="name"
+
+                        formControlName="equipment_type"
+                    ></p-dropdown>
+                </div>
+
+                <div class="form-group" style="margin-top: 18px;">
+                    <label class="form-label" for="max-weight"
+                        >Max Weight </label
+                    >
+                    <input
+                        class="form-input"
+                        type="text"
+                        placeholder="Enter max weight"
+
+                        formControlName="max_weight"
+                    />
+                    <span *ngIf="createLoad_Form.get('max_weight').errors">
+                        <span class="error" *ngIf="createLoad_Form.get('max_weight').touched && createLoad_Form.get('max_weight').errors.required">
+                            Max Weight is required
+                        </span>
+                    </span>
+                </div>
+
+                <div class="form-group" style="margin-top: 18px;">
+                    <label class="form-label" for="tarps"
+                        >Tarps</label
+                    >
+                    <input
+                        class="form-input"
+                        type="text"
+                        placeholder="Enter tarps"
+
+                        formControlName="tarps"
+                    />
+
+                </div>
+
+            <button class="create-load-button" type="submit" [disabled]="(createLoad_Form.invalid) || (!isPickUpFrmList) || (!isDeliveryFrmList)">CREATE NOW</button>
+
+            </div>
+            <div class="create-load-form-section">
+                <div class="form-input-group" style="margin-bottom: 80px">
+                    <label class="form-label" for="delivery-location"
+                        >Delivery Location  <span class="mandatory error">*</span></label
+                    >
+
+                    <span class="p-input-icon-right create-load-input-icon">
+                        <i class="pi pi-map-marker"></i>
+                        <input
+                            placeholder="Delivery Location"
+                            class="form-input"
+                            type="text"
+                            pInputText
+                            formControlName="load_delivery_loc"
+                            (keyup)="onDeliveryLocSearch($event)"
+                        />
+                        <span *ngIf="createLoad_Form.get('load_delivery_loc').errors">
+                            <span class="error" *ngIf="createLoad_Form.get('load_delivery_loc').touched && createLoad_Form.get('load_delivery_loc').errors.required">
+                                Delivery Location is required
+                            </span>
+                        </span>
+                    </span>
+                    <div class="autocomplete card" style="padding: 0px 0px 0px 0px;;overflow: auto;" *ngIf="showDelveryLoc">
+                        <li  class="autocomplete-items"  *ngFor="let each of mappedDelvData" (click)="onSelectDelveryLoc(each.raw)"> {{each.raw.display_name}} <i class="pi pi-map-marker"></i></li>
+                  </div>
+                </div>
+
+                <div class="form-input-group">
+                    <label class="form-label" for="delivery-date"
+                        >Delivery Date <span class="mandatory error">*</span></label
+                    >
+                    <p-calendar
+                        icon="pi pi-angle-down"
+                        [showIcon]="true"
+                        placeholder="Delivery Date"
+                        formControlName="load_delivery_date"
+                    ></p-calendar>
+                    <span *ngIf="createLoad_Form.get('load_delivery_date').errors">
+                        <span class="error" *ngIf="createLoad_Form.get('load_delivery_date').touched && createLoad_Form.get('load_delivery_date').errors.required">
+                            Delivery Date is required
+                        </span>
+                    </span>
+                </div>
+
+                <div class="form-group" style="margin-top: 23px">
+                    <label class="form-label" for="total-miles"
+                        >Total Miles </label
+                    >
+                    <input
+                        class="form-input"
+                        type="text"
+                        placeholder="Enter Total Miles"
+
+                        formControlName="total_miles"
+                        value="1859kms"
+                    />
+
+                </div>
+
+                <div class="form-group" style="margin-top: 23px;">
+                    <label class="form-label" for="subtype"
+                        >Sub Type </label
+                    >
+                    <input
+                        class="form-input"
+                        type="text"
+                        placeholder="Enter subtype"
+
+                        formControlName="sub_type"
+                    />
+
+                </div>
+
+                <div class="form-group"  style="margin-top: 23px;">
+                    <label class="form-label" for="trailer-length"
+                        >Trailer Length </label
+                    >
+                    <input
+                        class="form-input"
+                        type="text"
+                        placeholder="Enter trailer length"
+
+                        formControlName="trailer_length"
+                    />
+
+                </div>
+
+                <div class="form-group"  style="margin-top: 17px;">
+                    <label class="form-label" for="special-capabilities"
+                        >Special Capabilities</label
+                    >
+                    <input
+                        class="form-input"
+                        type="text"
+                        placeholder="Enter special capabilities"
+
+                        formControlName="spcial_capabilities"
+                    />
+                </div>
+            </div>
+            <div class="create-load-form-section">
+                <h2 class="required-documents-title">Required Documents</h2>
+                <div
+                    *ngFor="
+                        let requiredDocument of requiredDocuments;
+                        let i = index
+                    "
+                >
+                    <p-checkbox
+                        class="required-document-checkbox"
+                        name="groupname"
+                        value="{{ requiredDocument.name }}"
+                        label="{{ requiredDocument.name }}"
+                    ></p-checkbox>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

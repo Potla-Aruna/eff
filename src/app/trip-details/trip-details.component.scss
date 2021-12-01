@@ -1,0 +1,225 @@
+.pi-arrow-left {
+    font-size: 1rem;
+    background: var(--color-light);
+    color: var(--color-dark);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.trip-details {
+    padding: 1rem 1.5rem;
+    background: var(--color-light);
+    border-radius: 8px;
+}
+
+.trip-details-title-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.trip-details-title {
+    color: var(--color-dark);
+    margin: unset;
+    padding-left: 20px;
+    font-size: 18px;
+    padding-top: 5px;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+}
+
+.trip-details-card {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 1rem 0;
+    align-items: flex-start;
+    padding: 1rem;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 10px;
+}
+
+.driver-details {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.driver-name {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    margin-bottom: unset;
+    margin-right: 16px;
+}
+
+.driver-code {
+    color: var(--color-driver-code);
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: unset;
+    margin-right: 16px;
+}
+
+.driver-details {
+    i {
+        margin-right: 10px;
+        background: var(--color-primary);
+        padding: 5px;
+        border-radius: 60%;
+        color: var(--color-light);
+        font-size: 12px;
+    }
+}
+
+.driver-check {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.load-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    flex-direction: column;
+    height: 110px;
+    margin-bottom: 2rem;
+
+    .load-detail-container {
+        margin-right: 3rem;
+    }
+
+    .load-detail-title {
+        color: var(--color-driver-code);
+        font-weight: 600;
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+
+    .load-detail-value {
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        color: var(--color-secondary);
+        font-size: 14px;
+    }
+}
+
+.load-timeline {
+    margin: 3rem 0;
+}
+
+.custom-marker {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.load-details-wrapper {
+    display: flex;
+}
+
+.tab-panel-card {
+    background: var(--color-documents-view-background);
+    border-radius: 10px;
+    margin-bottom: 5rem;
+}
+
+.panel-cards-images-row {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+
+    .document-container {
+        padding: 1rem;
+        padding-right: unset;
+        padding-left: unset;
+        flex-shrink: 0;
+    }
+
+    .document-container:first-child {
+        padding-left: 1rem;
+    }
+
+    .document-title {
+        font-size: 14px;
+        font-family: Poppins, sans-serif;
+        color: var(--color-dark);
+    }
+
+    .document-thumbnail {
+        width: 80px;
+        margin-right: 20px;
+        height: auto;
+        cursor: pointer;
+        object-fit: cover;
+    }
+}
+
+.panel-cards-images-row::-webkit-scrollbar-track {
+    background-color: var(--color-documents-view-background);
+    border: 7px solid var(--color-documents-view-background);
+}
+
+.panel-cards-images-row::-webkit-scrollbar {
+    background-color: var(--color-documents-view-background);
+    border: 7px solid var(--color-documents-view-background);
+}
+
+.panel-cards-images-row::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    border: 7px solid var(--color-documents-view-background);
+}
+
+.timeline-date-time {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--color-subtitle);
+    font-family: Poppins, sans-serif;
+}
+
+.timeline-status {
+    font-weight: bold;
+    color: var(--color-dark);
+}
+
+.timeline-status,
+.timeline-location,
+.timeline-subtext {
+    font-size: 14px;
+    color: var(--color-secondary);
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+}
+
+.timeline-status {
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.timeline-location {
+    font-size: 12px;
+}
+
+.timeline-subtext {
+    font-size: 12px;
+}
+
+.trip-details-card-container {
+    flex: 1;
+}
+
+.line {
+    width: 44%;
+    position: absolute;
+    height: 4px;
+    background: var(--color-primary);
+    left: 47px;
+    top: 14px;
+}

@@ -1,0 +1,198 @@
+<div class="signup">
+    <div class="signup-form-wrapper">
+        <div class="signup-logo pl-10">
+            <img
+                class="signup-logo-image"
+                src="assets/layout/images/eff-logo.png"
+                alt="logo"
+            />
+            <div class="logo-title">
+                <h2 class="logo-heading">EXPRESS</h2>
+                <p class="logo-subtitle">FREIGHT FINANCE</p>
+            </div>
+        </div>
+
+        <form class="signup-form" [formGroup]="signUpForm" (ngSubmit)="onSubmit_SignUpForm(signUpForm.value)" >
+            <div class="form-group">
+                <label class="form-label" for="firstname"
+                    >First Name</label
+                >
+                <input
+                    class="form-input"
+                    type="text"
+                    placeholder="Enter first name"
+
+                    formControlName="first_name"
+                />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="lastname"
+                    >Last Name</label
+                >
+                <input
+                    class="form-input"
+                    type="text"
+                    placeholder="Enter last name"
+
+                    formControlName="last_name"
+                />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="email"
+                    >Email Id</label
+                >
+                <input
+                    class="form-input"
+                    type="email"
+                    placeholder="Enter your email"
+                    formControlName="email_id"
+                />
+                <span *ngIf="signUpForm.get('email_id').errors">
+                    <span class="error" *ngIf="signUpForm.get('email_id').value !== '' && signUpForm.get('email_id').errors.pattern">
+                        Email id format is invalid
+                    </span>
+                </span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="mcNumber"
+                    >MC# <span class="mandatory error">*</span></label
+                >
+                <input
+                    class="form-input"
+                    type="text"
+                    placeholder="Enter your MC number"
+                    required
+                    formControlName="mcNumber"
+                />
+                <span *ngIf="signUpForm.get('mcNumber').errors">
+                    <span class="error"  *ngIf="signUpForm.get('mcNumber').touched && signUpForm.get('mcNumber').errors.required">
+                        MC Number is required
+                    </span>
+                </span>
+            </div>
+
+
+            <div class="form-group">
+                <label class="form-label" for="company"
+                    >Company <span class="mandatory error">*</span></label
+                >
+                <input
+                    class="form-input"
+                    type="text"
+                    placeholder="Enter your company"
+                    required
+                    formControlName="company_id"
+                />
+                <span *ngIf="signUpForm.get('company_id').errors">
+                    <span class="error"  *ngIf="signUpForm.get('company_id').touched && signUpForm.get('company_id').errors.required">
+                        Company Name is required
+                    </span>
+                </span>
+            </div>
+
+
+            <div class="form-group">
+                <label class="form-label" for="phone"
+                    >Phone Number <span class="mandatory error">*</span></label
+                >
+                <input
+                    class="form-input"
+                    type="text"
+                    placeholder="Enter your phone number"
+                    required
+                    formControlName="phone_number"
+                    maxlength="10"
+                />
+                <span *ngIf="signUpForm.get('phone_number').errors">
+                    <span class="error" *ngIf="signUpForm.get('phone_number').touched && signUpForm.get('phone_number').errors.required">
+                        Phone Number is required
+                    </span>
+                    
+                </span>
+            </div>
+
+
+            <div class="form-group">
+                <label class="form-label" for="password"
+                    >Password <span class="mandatory error">*</span></label
+                >
+                <input
+                    class="form-input"
+                    type="password"
+                    placeholder="Enter your password"
+                    required
+                    formControlName="password"
+                />
+                <span *ngIf="signUpForm.get('password').errors">
+                    <span class="error"  *ngIf="signUpForm.get('password').touched && signUpForm.get('password').errors.required">
+                       Password is required
+                    </span>
+                </span>
+            </div>
+
+
+            <!-- <div class="form-group">
+                <label class="form-label" for="confirmpassword"
+                    >Confirm Password <span class="mandatory error">*</span></label
+                >
+                <input
+                    class="form-input"
+                    type="password"
+                    placeholder="Confirm your passoword"
+                    required
+                    formControlName="cnf_password"
+                />
+                <span *ngIf="signUpForm.get('cnf_password').errors">
+                    <span class="error" *ngIf="signUpForm.get('cnf_password').touched && signUpForm.get('cnf_password').errors.required">
+                        confirm password is required
+                    </span>
+                </span>
+                <span class="error" *ngIf="(signUpForm.get('cnf_password').value !== '' && signUpForm.get('password').value !== '')   && (signUpForm.get('cnf_password').value !== signUpForm.get('password').value)">
+                       Password and confirm password must match
+                </span>
+            </div> -->
+
+
+
+
+            <!-- <div class="checkbox-input-wrapper">
+                <div class="checkbox-input-container">
+                    <input class="checkbox-input"  formControlName="terms_cond" type="checkbox" />
+                    <label class="checkbox-label" for=""></label>
+                </div>
+                <span class="checkbox-label-content"
+                    >I have read and accepted the Express Freight Finance <br/> Terms
+                    and Conditions</span
+                >
+            </div> -->
+            <button type="submit" class="signup-button" [disabled]="signUpForm.invalid" >Sign Up</button>
+        </form>
+
+        <p class="signup-create-new-account pl-10">
+            Already have an account? <span style="cursor: pointer;" routerLink="/login">Sign In</span>
+        </p>
+        <!-- <div class="signup-footer-wrapper pl-10">
+            <div class="signup-footer">
+                <p (click)="msg()">Privacy Policy</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div
+                class="signup-footer"
+                style="
+                    padding-bottom: 28px;
+                    margin-bottom: unset;
+                    border: unset;
+                "
+            >
+                <p>
+                    Copyright &copy; 2021 Express Freight Finance | All Rights
+                    Reserved.
+                </p>
+            </div>
+        </div> -->
+    </div>
+</div>
+

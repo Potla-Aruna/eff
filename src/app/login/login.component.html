@@ -1,0 +1,64 @@
+<div class="login">
+    <div class="login-form-wrapper">
+        <div class="login-logo">
+            <img class="login-logo-image" src="assets/layout/images/eff-logo.png" alt="logo" />
+            <div class="logo-title">
+                <h2 class="logo-heading">EXPRESS</h2>
+                <p class="logo-subtitle">FREIGHT FINANCE</p>
+            </div>
+        </div>
+        <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit_LoginForm(loginForm.value)">
+            <div class="form-group">
+                <label class="form-label" for="userid">User Id <span class="mandatory">*</span></label>
+                <input class="form-input" type="text" placeholder="Enter user id" autocomplete="off" formControlName="user_id"
+                    maxlength="10" (keyup)="onUserIdEnter($event)" />
+                <span *ngIf="loginForm.get('user_id').errors">
+                    <span class="error"
+                        *ngIf="loginForm.get('user_id').touched && loginForm.get('user_id').errors.required">
+                        UserId is required
+                    </span>
+                    <span class="error"
+                        *ngIf="loginForm.get('user_id').value !== '' && loginForm.get('user_id').errors.pattern">
+                        UserId format is Invalid
+                    </span>
+                </span>
+            </div>
+            <div class="form-group" style="margin-bottom: unset;">
+                <label class="form-label" for="userid">Password <span class="mandatory">*</span></label>
+                <input class="form-input" type="password" autocomplete="off" placeholder="Enter your password"
+                    formControlName="password" />
+                <span *ngIf="loginForm.get('password').errors">
+                    <span class="error"
+                        *ngIf="loginForm.get('password').touched && loginForm.get('password').errors.required">
+                        Password is required
+                    </span>
+                </span>
+            </div>
+            <div class="checkbox-input-wrapper">
+                <div style="display: flex;">
+                    <div class="checkbox-input-container">
+                        <p-checkbox name="rememberMe" [ngModelOptions]="{standalone: true}" [(ngModel)]="rememberMe_Model" [style]="{'width': '16px !important','height': '16px !important','border-radius': '0px'}" id="rememberMe"  binary="true" (onChange)="onRememberMeChange($event)"></p-checkbox>
+                    
+                    </div>
+                    <span class="checkbox-label-content">Remember Me</span>
+                </div>
+                <p class="login-forgot-password pl-10">Forgot Password?</p>
+
+            </div>
+            <button type="submit" class="login-button">SIGN IN</button>
+        </form>
+
+        <p class="login-create-new-account pl-10">
+            Don't have an account? <span style="cursor: pointer;" routerLink="/signup">Sign Up</span>
+        </p>
+        <!-- <div class="login-footer-wrapper pl-10">
+            <div class="login-footer">
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="login-footer">
+                <p>Copyright &copy; 2021 Express Freight Finance | All Rights Reserved.</p>
+            </div>
+        </div> -->
+    </div>
+</div>

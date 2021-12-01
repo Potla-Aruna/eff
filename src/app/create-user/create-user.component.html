@@ -1,0 +1,86 @@
+<div class="create-user">
+    <div class="create-user-title-container">
+        <i
+            class="pi pi-arrow-left"
+            style="cursor: pointer"
+            routerLink="/dashboard/users-management"
+        ></i>
+        <h2
+            [ngStyle]="{
+                color: app.colorScheme === 'light' ? '#000' : '#fff'
+            }"
+            class="create-user-title"
+        >
+            Create User
+        </h2>
+    </div>
+
+    <div class="create-user-card">
+        <form class="create-user-form-wrapper" action="">
+            <div class="create-user-form">
+                <div class="create-user-form-section">
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="max-weight"
+                            >First Name</label
+                        >
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter first name"
+                        />
+                    </div>
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="email">Email Id</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="johnmark@gmail.com"
+                        />
+                    </div>
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="address">Address</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter address"
+                        />
+                    </div>
+                </div>
+
+                <div class="create-user-form-section">
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="last-name"
+                            >Last Name</label
+                        >
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter last name"
+                        />
+                    </div>
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="mobile"
+                            >Mobile <span class="mandatory">*</span></label
+                        >
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="(415) 555 - 2671"
+                        />
+                    </div>
+
+                    <div class="form-input-group">
+                        <label class="form-label" for="role">Role</label>
+                        <p-dropdown
+                            [options]="roles"
+                            optionLabel="name"
+                            placeholder="Select Role"
+                        ></p-dropdown>
+                    </div>
+                </div>
+            </div>
+
+            <button class="create-user-button" type="submit">CREATE</button>
+        </form>
+    </div>
+</div>

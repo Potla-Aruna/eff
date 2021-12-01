@@ -1,0 +1,614 @@
+<div class="trip-details">
+    <div
+        class="trip-details-title-container"
+        style="cursor: pointer"
+        routerLink="/dashboard"
+        routerLinkActive="active"
+    >
+        <i class="pi pi-arrow-left"></i>
+        <h2 class="trip-details-title">Trip Details</h2>
+    </div>
+
+    <div class="trip-details-card">
+        <div class="trip-details-card-container">
+            <div class="load-details">
+                <div class="driver-details">
+                    <h2
+                        class="driver-name"
+                        [ngStyle]="{
+                            color: app.colorScheme === 'light' ? '#000' : '#000'
+                        }"
+                    >
+                        John Mark
+                    </h2>
+                    <p class="driver-code">#938EF103</p>
+                    <i class="pi pi-check"></i>
+                    <span class="driver-check">Verified</span>
+                </div>
+
+                <div class="load-details-wrapper">
+                    <div class="load-detail-container">
+                        <p class="load-detail-title">Truck</p>
+                        <p class="load-detail-value">ACX 7518</p>
+                    </div>
+
+                    <div class="load-detail-container">
+                        <p class="load-detail-title">Load Size</p>
+                        <p class="load-detail-value">Full Truck</p>
+                    </div>
+
+                    <div class="load-detail-container">
+                        <p class="load-detail-title">Per Mile Rate</p>
+                        <p class="load-detail-value">$3.00/mile</p>
+                    </div>
+
+                    <div class="load-detail-container">
+                        <p class="load-detail-title">Total Miles</p>
+                        <p class="load-detail-value">390.0 mile</p>
+                    </div>
+
+                    <div class="load-detail-container">
+                        <p class="load-detail-title">Cost Estimate</p>
+                        <p class="load-detail-value">$1170.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trip-details-card-container" style="width: 500px; flex: 0">
+            <div class="load-timeline">
+                <div class="">
+                    <div
+                        class="widget-timeline"
+                        style="display: flex; position: relative"
+                    >
+                        <div class="line"></div>
+                        <div
+                            class="flex p-3 pb-0"
+                            style="
+                                padding-top: unset !important;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                width: 270px;
+                            "
+                        >
+                            <div class="flex flex-column align-items-center">
+                                <span
+                                    class="
+                                        flex
+                                        align-items-center
+                                        justify-content-center
+                                        border-circle
+                                        p-2
+                                        timeline-icon timeline-icon-1
+                                    "
+                                >
+                                    <i class="pi pi-check"></i>
+                                </span>
+                            </div>
+
+                            <div class="ml-1 mt-3 w-full">
+                                <div
+                                    class="
+                                        flex
+                                        align-items-center
+                                        justify-content-start
+                                        timeline-event-header
+                                        mb-1
+                                    "
+                                    style="
+                                        flex-direction: column;
+                                        align-items: flex-start !important;
+                                    "
+                                >
+                                    <span
+                                        [ngStyle]="{
+                                            color:
+                                                app.colorScheme === 'light'
+                                                    ? '#000'
+                                                    : '#000'
+                                        }"
+                                        class="timeline-status"
+                                        >Pick Up Completed</span
+                                    >
+                                    <span
+                                        [ngStyle]="{
+                                            color:
+                                                app.colorScheme === 'light'
+                                                    ? '#000'
+                                                    : '#000'
+                                        }"
+                                        style="margin-left: unset"
+                                        class="timeline-date-time"
+                                        >12:03 AM - 12/10/2021</span
+                                    >
+                                </div>
+                                <div>
+                                    <span
+                                        [ngStyle]="{
+                                            color:
+                                                app.colorScheme === 'light'
+                                                    ? '#000'
+                                                    : '#000'
+                                        }"
+                                        class="timeline-location"
+                                        >Las Vegas</span
+                                    >
+                                    <p
+                                        class="
+                                            timeline-subtext
+                                            line-height-3
+                                            mb-3
+                                        "
+                                        [ngStyle]="{
+                                            color:
+                                                app.colorScheme === 'light'
+                                                    ? '#000'
+                                                    : '#000'
+                                        }"
+                                        style="max-width: 28rem"
+                                    >
+                                        724 Farm Rd #1536, Sulphar Springs,
+                                        Texas , 75482
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex p-3 pb-0"
+                            style="
+                                padding-top: unset !important;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                width: 270px;
+                            "
+                        >
+                            <div class="flex flex-column align-items-center">
+                                <span
+                                    class="
+                                        flex
+                                        align-items-center
+                                        justify-content-center
+                                        border-circle
+                                        p-2
+                                        timeline-icon timeline-icon-1
+                                    "
+                                >
+                                    <i class="pi pi-check"></i>
+                                </span>
+                                <div
+                                    class="stage-2 h-full timeline-line-1"
+                                    style="width: 2px; min-height: 4rem"
+                                ></div>
+                            </div>
+
+                            <div class="ml-1 mt-3 w-full">
+                                <div
+                                    class="
+                                        flex
+                                        align-items-center
+                                        justify-content-start
+                                        timeline-event-header
+                                        mb-1
+                                    "
+                                    style="
+                                        flex-direction: column;
+                                        align-items: flex-start !important;
+                                    "
+                                >
+                                    <span
+                                        [ngStyle]="{
+                                            color:
+                                                app.colorScheme === 'light'
+                                                    ? '#000'
+                                                    : '#000'
+                                        }"
+                                        class="timeline-status"
+                                        >Delivery Completed</span
+                                    >
+                                    <span
+                                        [ngStyle]="{
+                                            color:
+                                                app.colorScheme === 'light'
+                                                    ? '#000'
+                                                    : '#000'
+                                        }"
+                                        style="margin-left: unset"
+
+                                        class="timeline-date-time"
+                                        >12:03 AM - 12/10/2021</span
+                                    >
+                                </div>
+                                <div>
+                                    <span
+                                        [ngStyle]="{
+                                            color:
+                                                app.colorScheme === 'light'
+                                                    ? '#000'
+                                                    : '#fff'
+                                        }"
+                                        class="timeline-location"
+                                        >Denver</span
+                                    >
+                                    <p
+                                        [ngStyle]="{
+                                            color:
+                                                app.colorScheme === 'light'
+                                                    ? '#000'
+                                                    : '#fff'
+                                        }"
+                                        class="
+                                            timeline-subtext
+                                            line-height-3
+                                            mb-3
+                                        "
+                                        style="max-width: 28rem"
+                                    >
+                                        1763 Haselton Rd, Wilmington New York ,
+                                        12997
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-panels">
+        <p-tabView>
+            <p-tabPanel header="Upload">
+                <div class="sub-panels">
+                    <p-tabView>
+                        <p-tabPanel header="Pickup Documents">
+                            <div class="tab-panel-card">
+                                <div class="panel-cards-images-row">
+                                    <div class="document-container">
+                                        <h2 class="document-title">POP DOC</h2>
+                                        <div
+                                            class="
+                                                document-thumbnail-image-container
+                                            "
+                                        >
+                                            <img
+                                                class="document-thumbnail"
+                                                src="assets/layout/images/document-thumnail.png"
+                                                alt="thumbnail"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="document-container">
+                                        <h2 class="document-title">BOL DOC</h2>
+                                        <div
+                                            class="
+                                                document-thumbnail-image-container
+                                            "
+                                        >
+                                            <img
+                                                class="document-thumbnail"
+                                                src="assets/layout/images/document-thumnail.png"
+                                                alt="thumbnail"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="document-container">
+                                        <h2 class="document-title">BOL DOC</h2>
+                                        <div
+                                            class="
+                                                document-thumbnail-image-container
+                                            "
+                                        >
+                                            <img
+                                                class="document-thumbnail"
+                                                src="assets/layout/images/document-thumnail.png"
+                                                alt="thumbnail"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="document-container">
+                                        <h2 class="document-title">POP DOC</h2>
+                                        <div
+                                            class="
+                                                document-thumbnail-image-container
+                                            "
+                                        >
+                                            <img
+                                                class="document-thumbnail"
+                                                src="assets/layout/images/document-thumnail.png"
+                                                alt="thumbnail"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-expanded">
+                                    <img
+                                        style="
+                                            width: auto;
+                                            object-fit: contain;
+                                            padding: 1rem;
+                                            height: 500px;
+                                        "
+                                        class="document-thumbnail"
+                                        src="assets/layout/images/document-full.png"
+                                        alt="thumbnail"
+                                    />
+                                </div>
+                            </div>
+                        </p-tabPanel>
+                        <p-tabPanel header="Delivery Documents">
+                            <div class="tab-panel-card">
+                                <div class="panel-cards-images-row">
+                                    <div class="document-container">
+                                        <h2 class="document-title">POP DOC</h2>
+                                        <div
+                                            class="
+                                                document-thumbnail-image-container
+                                            "
+                                        >
+                                            <img
+                                                class="document-thumbnail"
+                                                src="assets/layout/images/document-thumnail.png"
+                                                alt="thumbnail"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="document-container">
+                                        <h2 class="document-title">BOL DOC</h2>
+                                        <div
+                                            class="
+                                                document-thumbnail-image-container
+                                            "
+                                        >
+                                            <img
+                                                class="document-thumbnail"
+                                                src="assets/layout/images/document-thumnail.png"
+                                                alt="thumbnail"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="document-container">
+                                        <h2 class="document-title">BOL DOC</h2>
+                                        <div
+                                            class="
+                                                document-thumbnail-image-container
+                                            "
+                                        >
+                                            <img
+                                                class="document-thumbnail"
+                                                src="assets/layout/images/document-thumnail.png"
+                                                alt="thumbnail"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="document-container">
+                                        <h2 class="document-title">POP DOC</h2>
+                                        <div
+                                            class="
+                                                document-thumbnail-image-container
+                                            "
+                                        >
+                                            <img
+                                                class="document-thumbnail"
+                                                src="assets/layout/images/document-thumnail.png"
+                                                alt="thumbnail"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-expanded">
+                                    <img
+                                        style="
+                                            width: auto;
+                                            object-fit: contain;
+                                            padding: 1rem;
+                                            height: 500px;
+                                        "
+                                        class="document-thumbnail"
+                                        src="assets/layout/images/document-full.png"
+                                        alt="thumbnail"
+                                    />
+                                </div>
+                            </div>
+                        </p-tabPanel>
+                    </p-tabView>
+                </div>
+            </p-tabPanel>
+            <p-tabPanel header="Track">
+                <img
+                    style="width: 100%; height: 510px; object-fit: cover"
+                    src="assets/layout/images/map.png"
+                    alt=""
+                />
+            </p-tabPanel>
+            <p-tabPanel header="Summary">
+                <div class="load-timeline">
+                    <div class="">
+                        <div class="widget-timeline">
+                            <div
+                                class="flex p-3 pb-0"
+                                style="padding-top: unset !important"
+                            >
+                                <div
+                                    class="flex flex-column align-items-center"
+                                >
+                                    <span
+                                        class="
+                                            flex
+                                            align-items-center
+                                            justify-content-center
+                                            border-circle
+                                            p-2
+                                            timeline-icon timeline-icon-1
+                                        "
+                                    >
+                                        <i class="pi pi-check"></i>
+                                    </span>
+                                    <div
+                                        class="h-full timeline-line-1"
+                                        style="width: 2px; min-height: 4rem"
+                                    ></div>
+                                </div>
+
+                                <div class="ml-3 w-full">
+                                    <div
+                                        class="
+                                            flex
+                                            align-items-center
+                                            justify-content-start
+                                            timeline-event-header
+                                            mb-1
+                                        "
+                                    >
+                                        <span
+                                            [ngStyle]="{
+                                                color:
+                                                    app.colorScheme === 'light'
+                                                        ? '#000'
+                                                        : '#fff'
+                                            }"
+                                            class="timeline-status"
+                                            >Pick Up Completed</span
+                                        >
+                                        <span
+                                            [ngStyle]="{
+                                                color:
+                                                    app.colorScheme === 'light'
+                                                        ? '#000'
+                                                        : '#fff'
+                                            }"
+                                            class="timeline-date-time"
+                                            >12:03 AM - 12/10/2021</span
+                                        >
+                                    </div>
+                                    <div>
+                                        <span
+                                            [ngStyle]="{
+                                                color:
+                                                    app.colorScheme === 'light'
+                                                        ? '#000'
+                                                        : '#fff'
+                                            }"
+                                            class="timeline-location"
+                                            >Las Vegas</span
+                                        >
+                                        <p
+                                            class="
+                                                timeline-subtext
+                                                line-height-3
+                                                mb-3
+                                            "
+                                            [ngStyle]="{
+                                                color:
+                                                    app.colorScheme === 'light'
+                                                        ? '#000'
+                                                        : '#fff'
+                                            }"
+                                            style="max-width: 28rem"
+                                        >
+                                            724 Farm Rd #1536, Sulphar Springs,
+                                            Texas , 75482
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex p-3 pb-0"
+                                style="padding-top: unset !important"
+                            >
+                                <div
+                                    class="flex flex-column align-items-center"
+                                >
+                                    <span
+                                        class="
+                                            flex
+                                            align-items-center
+                                            justify-content-center
+                                            border-circle
+                                            p-2
+                                            timeline-icon timeline-icon-1
+                                        "
+                                    >
+                                        <i class="pi pi-check"></i>
+                                    </span>
+                                    <div
+                                        class="stage-2 h-full timeline-line-1"
+                                        style="width: 2px; min-height: 4rem"
+                                    ></div>
+                                </div>
+
+                                <div class="ml-3 w-full">
+                                    <div
+                                        class="
+                                            flex
+                                            align-items-center
+                                            justify-content-start
+                                            timeline-event-header
+                                            mb-1
+                                        "
+                                    >
+                                        <span
+                                            [ngStyle]="{
+                                                color:
+                                                    app.colorScheme === 'light'
+                                                        ? '#000'
+                                                        : '#fff'
+                                            }"
+                                            class="timeline-status"
+                                            >Delivery Completed</span
+                                        >
+                                        <span
+                                            [ngStyle]="{
+                                                color:
+                                                    app.colorScheme === 'light'
+                                                        ? '#000'
+                                                        : '#fff'
+                                            }"
+                                            class="timeline-date-time"
+                                            >12:03 AM - 12/10/2021</span
+                                        >
+                                    </div>
+                                    <div>
+                                        <span
+                                            [ngStyle]="{
+                                                color:
+                                                    app.colorScheme === 'light'
+                                                        ? '#000'
+                                                        : '#fff'
+                                            }"
+                                            class="timeline-location"
+                                            >Denver</span
+                                        >
+                                        <p
+                                            [ngStyle]="{
+                                                color:
+                                                    app.colorScheme === 'light'
+                                                        ? '#000'
+                                                        : '#fff'
+                                            }"
+                                            class="
+                                                timeline-subtext
+                                                line-height-3
+                                                mb-3
+                                            "
+                                            style="max-width: 28rem"
+                                        >
+                                            1763 Haselton Rd, Wilmington New
+                                            York , 12997
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+</div>
+
+<!--Additional-->

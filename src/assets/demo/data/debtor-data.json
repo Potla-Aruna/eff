@@ -1,0 +1,74 @@
+{
+    "data": [
+        {
+            "company_name": "County Trucking",
+            "contact_person": "Jack",
+            "email_id": "jack@gmail.com",
+            "address": "1501 NJ-38, Cherry Hill",
+            "city": "Cherry Hill",
+            "pincode": "08002",
+            "state": "New Jersey",
+            "create_date": "11-19-2021"
+        },
+        {
+            "company_name": "E Trucking",
+            "contact_person": "Jim",
+            "email_id": "jim@gmail.com",
+            "address": "1501 NJ-38, Cherry Hill",
+            "city": "Cherry Hill",
+            "pincode": "08002",
+            "state": "New Jersey",
+            "create_date": "11-09-2021"
+        },
+        {
+            "company_name": "Highway Trucking",
+            "contact_person": "Zoe",
+            "email_id": "zoe@gmail.com",
+            "address": "1400 Maryland Ave NE, Washington",
+            "city": "Washington",
+            "pincode": "07094",
+            "state": "DC ",
+            "create_date": "11-12-2021"
+        },
+        {
+            "company_name": "Lane Trucking",
+            "contact_person": "Jane",
+            "email_id": "jane@gmail.com",
+            "address": "1200 N Lamar Blvd, Austin",
+            "city": "Austin",
+            "pincode": "78703",
+            "state": "Texas",
+            "create_date": "10-19-2021"
+        },
+        {
+            "company_name": "Mile Trucking",
+            "contact_person": "Jack",
+            "email_id": "jack@gmail.com",
+            "address": "MI 48202, United States",
+            "city": "Detroit",
+            "pincode": "48202",
+            "state": "Michigan",
+            "create_date": "10-29-2021"
+        },
+        {
+            "company_name": "Falcon Trucking",
+            "contact_person": "Jack",
+            "email_id": "jack@gmail.com",
+            "address": "2627 White Settlement Rd, Fort Worth",
+            "city": "Fort Worth",
+            "pincode": "76107",
+            "state": "Texas",
+            "create_date": "11-09-2021"
+        }
+    ],
+    "headers": [
+        "Company Name",
+        "Contact Person",
+        "Email Id",
+        "Address",
+        "Postal Code",
+        "City",
+        "State",
+        "Create Date"
+    ]
+}

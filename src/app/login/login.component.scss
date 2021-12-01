@@ -1,0 +1,204 @@
+.login {
+    background: var(--color-primary);
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-form-wrapper {
+    background: var(--color-light);
+    padding: 4rem;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-logo {
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+.login-logo-image {
+    width: 64px;
+    object-fit: contain;
+    margin-right: 3px;
+}
+
+.logo-heading {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--color-dark);
+    font-family: "Poppins", sans-serif;
+}
+
+.logo-subtitle {
+    font-size: 11px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    color: var(--color-subtitle);
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-dark);
+    margin-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 7px;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-input {
+    border: unset;
+    background: transparent;
+    padding: 5px 10px;
+    width: 100%;
+    border-bottom: 3px solid var(--color-form-input-border);
+    color: var(--color-dark);
+    outline: unset;
+}
+
+
+.form-input::placeholder {
+    color: var(--color-form-input-placeholder);
+    font-weight: 500;
+}
+
+.login-button {
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    background: var(--color-primary);
+    color: var(--color-light);
+    font-weight: 500;
+    border: unset;
+    outline: unset;
+}
+
+.login-forgot-password,
+.login-create-new-account {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--color-dark);
+    margin-bottom: 5px;
+    margin-top: 2rem;
+}
+
+
+.login-forgot-password{
+    margin-top: unset;
+    cursor: pointer;
+}
+
+.login-create-new-account span {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.login-footer-wrapper {
+    margin-top: 3rem;
+}
+
+.login-footer {
+    display: flex;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--color-form-input-border);
+    margin-bottom: 1rem;
+}
+
+.login-footer p {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--color-dark);
+    margin-bottom: unset;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    position: relative;
+}
+
+.checkbox-input {
+    width: 16px;
+    height: 16px;
+    border-radius: 0px;
+}
+.p-checkbox .p-checkbox-box {
+    width: 16px;
+    height: 16px;
+    border-radius: 0px;
+  }
+.checkbox-label::before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: #eff1f4;
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 0;
+    left: 0;
+    top: -12px;
+}
+
+.checkbox-input:checked + .checkbox-label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 5px;
+    width: 3px;
+    height: 7px;
+    border: solid var(--color-primary);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.checkbox-label-content {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--color-subtitle);
+}
+
+.checkbox-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+.error{
+    color: red;
+    font-size: 11px;
+    padding: 0 0 0 10px;
+}
+
+.mandatory{
+    color: red;
+}
+
+.login-create-new-account{
+
+    color: var(--color-gray);
+
+}

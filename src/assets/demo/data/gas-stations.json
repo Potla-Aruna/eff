@@ -1,0 +1,67 @@
+{
+    "data": [
+        {
+            "station_name": "USA GAS",
+            "address": "1501 NJ-38, Cherry Hill",
+            "address2" :"NJ 08002, United States",
+            "city": "Cherry Hill",
+            "pincode": "08002",
+            "state": "New Jersey",
+            "work_hours": "6AM - 10PM"
+        },
+        {
+            "station_name": "Sunoco Gas Station",
+            "address": "249 NJ-3, Secaucus",
+            "address2" : "NJ 07094, United States",
+            "city": "Secaucus",
+            "pincode": "07094",
+            "state": "New Jersey",
+            "work_hours": "Open 24 hours"
+        },
+        {
+            "station_name": "Shell",
+            "address": "1400 Maryland Ave NE, Washington",
+            "address2" : "DC 20002, United States",
+            "city": "Washington",
+            "pincode": "07094",
+            "state": "DC ",
+            "work_hours": "Open 24 hours"
+        },
+        {
+            "station_name": "Chevron",
+            "address": "1200 N Lamar Blvd, Austin",
+            "address2" : "TX 78703, United States",
+            "city": "Austin",
+            "pincode": "78703",
+            "state": "Texas",
+            "work_hours": "7AM - 12AM"
+        },
+        {
+            "station_name": "Marathon Gas",
+            "address": "8901 Woodward Ave, Detroit",
+            "address2" : "MI 48202, United States",
+            "city": "Detroit",
+            "pincode": "48202",
+            "state": "Michigan",
+            "work_hours": "Open 24 hours"
+        },
+        {
+            "station_name": "7-ELEVEN",
+            "address": "2627 White Settlement Rd, Fort Worth",
+            "address2" : "TX 76107, United States",
+            "city": "Fort Worth",
+            "pincode": "76107",
+            "state": "Texas",
+            "work_hours": "Open 24 hours"
+        }
+    ],
+    "headers": [
+        "Station Name",
+        "Address 1",
+        "Address 2",
+        "City",
+        "Pincode",
+        "State",
+        "Work Hours"
+    ]
+}

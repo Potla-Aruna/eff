@@ -1,0 +1,13 @@
+<div class="layout-sidebar" [ngClass]="app.layoutColor === 'white' ? 'dark' : 'white'"  (click)="appMain.onMenuClick()">
+    <div class="layout-menu-container" [ngClass]="app.layoutColor === 'white' ? 'dark' : 'white'">
+        <!-- <ul class="layout-menu">
+            <li app-menuitem *ngFor="let item of model; let i = index;" [item]="item" [index]="i" [root]="true"></li>
+        </ul> -->
+        <div class="layout-menu" *ngFor="let item of menuItems;let i=index;">
+            <div class="menu-item" [ngClass]="{'active':i===0 || currentlyActive}" (click)="setCurrentActive(i)">
+                <i  class="fas {{item.icon}}"></i>
+                <p class="menu-text">{{item.text}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,103 @@
+<div class="create-gas-station">
+    <div class="create-user-title-container">
+        <i
+            class="pi pi-arrow-left"
+            style="cursor: pointer"
+            routerLink="/dashboard/gas-stations"
+        ></i>
+        <h2 [ngStyle]="{
+            color: app.colorScheme === 'light' ? '#000' : '#fff'
+        }" class="create-gas-station-title">Create Gas Station</h2>
+    </div>
+
+    <div class="create-gas-station-card">
+        <form class="create-gas-station-form-wrapper" action="">
+            <div class="create-gas-station-form">
+                <div class="create-user-form-section" style="width: 230px;">
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="station-name"
+                            >Station Name</label
+                        >
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter station name"
+                        />
+                    </div>
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="city">City</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter city"
+                        />
+                    </div>
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="pin">Pincode</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter Pincode"
+                        />
+                    </div>
+
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="longitude">Longitude</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter Longitude"
+                        />
+                    </div>
+
+                </div>
+
+                <div class="create-gas-station-form-section">
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="address1"
+                            >Address 1</label
+                        >
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter Address 1"
+                        />
+                    </div>
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="address2"
+                            >Address 2</label
+                        >
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter Address 2"
+                        />
+                    </div>
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="hours"
+                            >Enter Work Hours</label
+                        >
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter working hours"
+                        />
+                    </div>
+
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="latitude">Latitude</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter Latitude"
+                        />
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="create-gas-station-button" type="submit">CREATE</button>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+<div class="create-driver">
+    <div class="create-driver-title-container">
+        <i
+            class="pi pi-arrow-left"
+            style="cursor: pointer"
+            routerLink="/dashboard/drivers-management"
+        ></i>
+        <h2   [ngStyle]="{
+            color: app.colorScheme === 'light' ? '#000' : '#fff'
+        }" class="create-driver-title">Create Driver</h2>
+    </div>
+
+    <div class="create-driver-card">
+        <form class="create-driver-form-wrapper" action="">
+            <div class="create-driver-form">
+                <div class="create-driver-form-section">
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="max-weight"
+                            >First Name</label
+                        >
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter first name"
+                        />
+                    </div>
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="email">Email Id</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="johnmark@gmail.com"
+                        />
+                    </div>
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="email">License</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter your license"
+                        />
+                    </div>
+                </div>
+
+                <div class="create-driver-form-section">
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="last-name"
+                            >Last Name</label
+                        >
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="Enter last name"
+                        />
+                    </div>
+                    <div class="form-group" style="margin-top: 18px">
+                        <label class="form-label" for="mobile">Mobile <span class="mandatory">*</span></label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            placeholder="(415) 555 - 2671"
+                        />
+                    </div>
+                    <!-- <div
+                        class="form-group"
+                        style="margin-top: 18px; position: relative;"
+                    >
+                        <label class="form-label" for="email"
+                            >Upload Proof</label
+                        >
+                        <div style="cursor: pointer;" (click)="uploadLicense($event)" id="create-driver-license-upload">
+                            <input (change)="fileDetails()"
+                                id="hidden-file-upload-button"
+                                class="form-input hidden-file-upload"
+                                type="file"
+                                placeholder="License.jpg"
+                            />
+                            <input
+                                class="form-input"
+                                type="text"
+                                id="upload-license-button"
+                                placeholder="Upload license "
+                            />
+                            <i style="z-index: 1;" class="pi pi-camera" ></i>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="form-group" style="margin-top: 18px">
+                <label class="form-label" for="address">Address</label>
+                <input
+                    class="form-input"
+                    type="text"
+                    placeholder="Enter address"
+                />
+            </div>
+
+            <button class="create-driver-button" type="submit">CREATE</button>
+
+        </form>
+    </div>
+</div>

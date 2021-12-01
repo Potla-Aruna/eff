@@ -1,0 +1,64 @@
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.profile{
+    flex-basis: 45%;   
+}
+.profile .form{
+    width:100%; 
+    text-align: left; 
+    border: 1px solid #333;
+    border-radius: 1rem;
+    padding-top: 1rem;    
+}
+ .content .profile .form label{
+    font-size: 1.2rem;
+    margin-left: 1.7rem;
+
+}
+.profile .form input{
+    width:90%;
+    padding:1rem 1rem;
+    font-size: 1.2rem;
+    margin-bottom:1rem;
+    border-bottom: 1px solid #333;
+    border-radius: 0.5rem;
+    margin-left: 1.7rem;
+}
+.content .aside{
+    font-size: 1.2rem;
+    flex-basis: 45%;    
+}
+.content .aside .form{
+    width:100%;
+    border:1px solid #333;
+    border-radius: 1rem;   
+    padding-top: 1.5rem;
+}
+.content .aside .form label{
+    margin-left:1.7rem;
+}
+.content .aside .form input{
+    width:90%;
+    margin-left: 1.7rem;
+    border-radius: 0.5rem;
+    padding:1rem;
+    margin-bottom: 1rem;  
+}
+.aside .btn{
+    text-align: center;
+    margin-top: 2rem;
+
+}
+.aside button{
+margin:auto;
+width:20%;
+font-size: 1.2rem;
+background-color: royalblue;
+border: none;
+border-radius: 0.3rem;
+color: #fff;
+padding:0.5rem;
+text-align: center;
+}

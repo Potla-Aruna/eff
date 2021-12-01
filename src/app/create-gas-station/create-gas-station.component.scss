@@ -1,0 +1,67 @@
+.create-gas-station {
+    padding-top: 2rem;
+}
+
+.pi-arrow-left {
+    font-size: 1rem;
+    background: var(--color-light);
+    color: var(--color-dark);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.create-gas-station-title-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.create-gas-station-title {
+    color: var(--color-dark);
+    margin: unset;
+    font-size: 18px;
+    padding: 15px 0;
+    font-weight: 900;
+    font-family: 'Poppins',sans-serif;
+}
+
+.create-gas-station-card {
+    border-radius: 10px;
+    padding: 2rem 2rem 2rem;
+    background: var(--color-light);
+    margin: 1rem 0 2rem;
+}
+
+.create-gas-station-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-gas-station-form-wrapper {
+    width: 650px;
+}
+
+.create-gas-station-form-section {
+    flex: 1;
+}
+
+.create-gas-station-form-section:last-child {
+    margin-left: 2rem;
+}
+
+
+
+.create-gas-station-button{
+    background: var(--color-primary);
+    border: transparent;
+    color: var(--color-light);
+    outline: unset;
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.mandatory{
+    color: red;
+}

@@ -1,0 +1,12 @@
+.work-in-progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    flex-direction: column;
+
+    img{
+        width: 450px;
+        margin: 1rem 0;
+    }
+}

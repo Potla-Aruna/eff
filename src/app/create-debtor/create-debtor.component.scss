@@ -1,0 +1,67 @@
+.create-debtor {
+    padding-top: 2rem;
+}
+
+.pi-arrow-left {
+    font-size: 1rem;
+    background: var(--color-light);
+    color: var(--color-dark);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.create-debtor-title-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.create-debtor-title {
+    color: var(--color-dark);
+    margin: unset;
+    font-size: 18px;
+    padding: 15px 0;
+    font-weight: 900;
+    font-family: 'Poppins',sans-serif;
+}
+
+.create-debtor-card {
+    border-radius: 10px;
+    padding: 2rem 2rem 2rem;
+    background: var(--color-light);
+    margin: 1rem 0 2rem;
+}
+
+.create-debtor-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-debtor-form-wrapper {
+    width: 750px;
+}
+
+.create-debtor-form-section {
+    flex: 1;
+}
+
+.create-debtor-form-section:last-child {
+    margin-left: 2rem;
+}
+
+
+
+.create-debtor-button{
+    background: var(--color-primary);
+    border: transparent;
+    color: var(--color-light);
+    outline: unset;
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.mandatory{
+    color: red;
+}
